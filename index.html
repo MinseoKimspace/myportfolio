@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+  <script src="script.js" defer></script> 
+  <canvas id="bg-canvas"></canvas>
+  
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#" data-target="about">About Me</a></li>
+      <li><a href="#" data-target="projects">Projects</a></li>
+      <li><a href="#" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>  
+  <!-- About Section -->
+  <section id="about">
+    <button class="close-section" onclick="closeSection('about')">X</button>
+    <h2>About Me</h2>
+    <p>Hello, I am Minseo Kim as Georgia Tech CS major student.</p>
+    <p>Tech skills: Java, C++/C, python, HTML, CSS, Javascript</p>
+  </section>  
+  <!-- Projects Section -->
+  <section id="projects">
+    <button class="close-section" onclick="closeSection('projects')">X</button>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Project A</strong><br/>
+        - content:<br/>
+        - stack: HTML, CSS, JS<br/>
+        - GitHub: <a href="https://github.com/username/projectA" target="_blank">link</a>
+      </li>
+      <li>
+        <strong>Project B</strong><br/>
+        - content:<br/>
+        - stack: React<br/>
+        - Demo: <a href="https://projectB-demo.netlify.app" target="_blank">link</a>
+      </li>
+    </ul>
+  </section>  
+  <!-- Contact Section -->
+  <section id="contact">
+    <button class="close-section" onclick="closeSection('contact')">X</button>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rlaalstj9932@gmail.com">rlaalstj9932@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/MinseoKimspace" target="_blank">
+      https://github.com/MinseoKimspace</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/minseo-kim-space/" target="_blank">
+      https://www.linkedin.com/in/minseo-kim-space/</a></p>
+  </section>
+</body>
+</html>
